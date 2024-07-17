@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+
+use App\Models\SubjectGrade;
 use Illuminate\Http\Request;
 
 class StudentController extends Controller
@@ -11,8 +13,17 @@ class StudentController extends Controller
      */
     public function index()
     {
-        //
-    }
+        //return Student::all();
+        //return Student::Where('province', 'Keytucky')->get()
+
+        //returnn Student::Where('province', 'Kentucky')
+          //  ->where('fname', 'Daphnee') 
+            //->get();
+
+             // return Student::where('province', 'Kentucky')
+               //    ->
+    }       
+         
 
     /**
      * Show the form for creating a new resource.
